@@ -14,29 +14,80 @@
     <![endif]-->
   </head>
   <body>
-  	<h1>Currently Calculate Ahmedabad Torrent Power Residential Signle Phase</h1>
-    <div class="form-group">
-    <label class="sr-only" for="pastReading">Past Reading</label>
-    <input type="text" class="form-control" id="pastReading" placeholder="Past Reading">
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="presentReading">Present Reading</label>
-    <input type="text" class="form-control" id="presentReading" placeholder="Present Reading">
-  </div>
-  <button type="submit" class="btn btn-default" id="calculate">Calculate</button>
+  	<div class="wrapper container">
+		<div class="page-header">
+			<h1>eBill Calc</h1>
+			<h2>Torrent Power Residential Signle Phase Calculator <small>Ahmedabad - Gujarat - India</small></h2>
+		</div>
+		
+		<div class="row">    	
+			<div class="col-lg-5" id="trigger">
+				<div class="form-group">
+					<label class="sr-only" for="pastReading">Past Reading</label>
+					<input type="text" class="form-control" id="pastReading" placeholder="Past Reading">
+				</div>
+	
+				<div class="form-group">
+					<label class="sr-only" for="presentReading">Present Reading</label>
+					<input type="text" class="form-control" id="presentReading" placeholder="Present Reading">
+				</div>
+		
+				<button type="submit" class="btn btn-primary btn-block" id="calculate">Calculate</button>
+			</div>
+			
+			<div class="col-lg-7" id="result">
+				<table class="table table-responsive table-striped">
+					<tr>
+						<th width="40%">
+							Description
+						</th>
+						<th>Result</th>
+					</tr>
+					<tr>
+						<td width="40%">Unit Consumed</td>
+						<td><strong><span id="unitConsumed"></span></strong></td>
+					</tr>
+					
+					<tr>
+						<td>Energy Charges</td>
+						<td><strong><span id="energyCharges"></span></strong></td>
+					</tr>
+					
+					<tr>
+						<td>Fixed Charges</td>
+						<td><strong><span id="fixedCharges"></span></strong></td>
+					</tr>
+					
+					<tr>
+						<td>FPPPA Charges</td>
+						<td><strong><span id="fpppaCharges"></span></strong></td>
+					</tr>
+					
+					<tr>
+						<td>Govt Duty</td>
+						<td><strong><span id="govDuty"></span></strong></td>
+					</tr>
+					
+					<tr>
+						<td>Meter Rent</td>
+						<td><strong><span id="meterRent"></span></strong></td>
+					</tr>
+					
+					<tr>
+						<td><strong>Final Charges</strong></td>
+						<td class="alert-danger"><strong><span id="finalCharges"></span></strong></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+  	
+		<footer id="footerBase">
+			<p>Not affiliated or endorse any Company , Indicative charges only</p>
+				
+			<h5>This is draft version <a href="https://github.com/wasim117/ebillcalc"> <strong>Fork on GitHub for design-code improvement</strong></a></h5>
+		</footer>
 
-      <h2>Unit Consumed <span id="unitConsumed"></span></h2>
-
-      <h2>Energy Charges <span id="energyCharges"></span></h2>
-      <h2>Fixed Charges <span id="fixedCharges"></span></h2>
-      <h2>FPPPA Charges <span id="fpppaCharges"></span></h2>
       
-      <h2>Govt Duty <span id="govDuty"> </span></h2>
-      <h2>Meter Rent <span id="meterRent"> </span></h2>
-
-      <h2>Final Charges <span id="finalCharges"></span></h2>
-      <p>Not affiliated or endorse any Company , Indicative charges only</p>
-      <h5>This is draft version <a href="https://github.com/wasim117/ebillcalc"> <strong>Fork on GitHub for design-code improvement</strong></a></h5>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.8.2.min.js"></script>
